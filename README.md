@@ -60,7 +60,7 @@ The link `lanaya_v2/home` will now point to the controller index and the method 
 You can add pages or blog post from `/content/create`. Just fill in information in the form and press the create button. Title is the header of the page, key is a field to make the 
 page/post unique, type can be page or post, filter can be plain(just text) or bbcode(some characters in the text will translate to html code).
 
-You can view all the pages you have add at `http://localhost/lanaya_refinstall/content`. Here you can see their ID, name and who the creator is. You can also delete and edit pages/posts. If you want to use one of those pages in the menu you have to link to their id!
+You can view all the pages you have add at `/content`. Here you can see their ID, name and who the creator is. You can also delete and edit pages/posts. If you want to use one of those pages in the menu you have to link to their id!
 For example: 
 
 	'examle-navbar' => array(
