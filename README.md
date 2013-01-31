@@ -21,6 +21,15 @@ The modules in Lanaya is used for the user, content and guestbook. You need to i
 ##Configuration
 The configuration file can be found in the folder `site/config.php`. It contains information for controllers, themes, menus, routing, title, logo, footer, etc...
 
+###Change title of the page
+Just change the value of ***title*** inside the data array: `'title' => 'YOUR TITLE',`
+
+###Change logo
+Just change the value of ***favicon*** inside the data array: `'favicon' => 'logo.jpg',`
+
+###Change footer
+Just change the value of ***footer*** inside the data array: `'footer' => '<p>YOUR FOOTER</p>',`
+
 ### Add a controller
 To add a controller you have to change the controllers array in config.php. This is an example of adding a contoller:
 `'example' => array('enabled' => true, 'class' => 'CCExample'),`
@@ -50,6 +59,17 @@ The link `lanaya_v2/home` will now point to the controller index and the method 
 ##Add pages and blog post
 You can add pages or blog post from `/content/create`. Just fill in information in the form and press the create button. Title is the header of the page, key is a field to make the 
 page/post unique, type can be page or post, filter can be plain(just text) or bbcode(some characters in the text will translate to html code).
+
+You can view all the pages you have add at `http://localhost/lanaya_refinstall/content`. Here you can see their ID, name and who the creator is. You can also delete and edit pages/posts. If you want to use one of those pages in the menu you have to link to their id!
+For example: 
+
+	'examle-navbar' => array(
+	  'about'     => array('url'=>'4', 'label'=>'Home'),
+	),
+	
+This will add a menu with one link to the home page wich has id 4. You can also use Routing to create a better url to the page
+
+All blog post can be viewed on the page `/blog`.
 
 ##An example controller
 Look at the example `https://github.com/anthuz/lanaya_v2/tree/master/site/controllers/CCMycontroller/CCMycontroller.php`.
