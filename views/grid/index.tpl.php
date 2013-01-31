@@ -15,7 +15,6 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 	
-	<link rel='stylesheet' type='text/css' href='style.php' />
 	<link rel='stylesheet' href='<?=theme_url($stylesheet)?>'/>
 	<?php if(isset($inline_style)): ?><style><?=$inline_style?></style><?php endif; ?>
 	
